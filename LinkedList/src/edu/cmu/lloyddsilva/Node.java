@@ -1,26 +1,36 @@
 package edu.cmu.lloyddsilva;
 
-public class Node {
-	private int data;
-	private Node next;
+public class Node<T> {
+	private T data;
+	private Node<T> next;
 	
-	public Node(int data, Node next) {
+	public Node(T data) {
+		super();
+		this.data = data;
+	}
+	
+	public Node(T data, Node<T> next) {
 		super();
 		this.data = data;
 		this.next = next;
 	}
-	public int getData() {
+	public T getData() {
 		return data;
 	}
-	public void setData(int data) {
+	public void setData(T data) {
 		this.data = data;
 	}
-	public Node getNext() {
+	public Node<T> getNext() {
 		return next;
 	}
-	public void setNext(Node next) {
+	public void setNext(Node<T> next) {
 		this.next = next;
 	}
+	
+	public String toString() {
+		return "data: " + data.toString();
+	}
+	
 	
 
 }
