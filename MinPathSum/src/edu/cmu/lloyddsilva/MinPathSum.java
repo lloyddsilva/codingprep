@@ -9,7 +9,7 @@ public class MinPathSum {
 	}
 	
 	public static int minPathSum(int[][] grid) {
-		
+		return 0;
 		
 	}
 }
