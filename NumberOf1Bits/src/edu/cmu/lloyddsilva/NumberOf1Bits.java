@@ -17,5 +17,9 @@ public class NumberOf1Bits {
 		
 		return count;
 	}
+	
+	public static int hammingWeightAPI(int n) {
+		return Integer.bitCount(n);
+	}
 
 }
