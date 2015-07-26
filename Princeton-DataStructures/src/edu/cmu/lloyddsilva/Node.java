@@ -1,8 +1,8 @@
 package edu.cmu.lloyddsilva;
 
 public class Node {
-	String item;
-	Node next;
+	public String item;
+	public Node next;
 	
 	public Node(String item) {
 		this.item = item;

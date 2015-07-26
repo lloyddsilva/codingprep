@@ -1,4 +1,4 @@
-package edu.cmu.lloyddsilva;
+package edu.cmu.lloyddsilva.stack;
 
 public class ResizingStackOfStrings {
 	String[] data;

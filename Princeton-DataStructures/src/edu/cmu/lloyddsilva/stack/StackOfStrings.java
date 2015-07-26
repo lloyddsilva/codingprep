@@ -1,4 +1,6 @@
-package edu.cmu.lloyddsilva;
+package edu.cmu.lloyddsilva.stack;
+
+import edu.cmu.lloyddsilva.Node;
 
 public class StackOfStrings {
 	private Node head = null;
