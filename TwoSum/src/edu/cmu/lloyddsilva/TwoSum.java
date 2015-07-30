@@ -8,7 +8,9 @@ import java.util.HashMap;
 public class TwoSum {
 	public static void main(String[] args) {
 		int[] input = new int[] {-1, 0, 1,2,3,4,5,6,7};
-		System.out.println(Arrays.toString(twoSum(input, 8)));
+		int[] input2 = new int[] {3,2,4};
+		//System.out.println(Arrays.toString(twoSum(input, 8)));
+		System.out.println(Arrays.toString(twoSum(input2, 6)));
 		
 	}
 	
@@ -30,21 +32,19 @@ public class TwoSum {
 		return result;
 	}
 	
-	public static int[] twoSum(int[] input, int sum) {
-		int[] output = new int[]{0,0};
-		
+	public static int[] twoSum(int[] nums, int target) {
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for(int i=0; i< input.length; i++) {
-			map.put(input[i], i);
-		}
 		
-		for(int j=0; j<input.length; j++) {
-			int remainder = sum-input[j];
+		
+		for(int j=0; j<nums.length; j++) {
+			int remainder = target-nums[j];
 			if(map.containsKey(remainder)) {
-				return new int[]{j+1, map.get(remainder) +1};
+				return new int[]{map.get(remainder) +1, j+1};
+			} else {
+				map.put(nums[j], j);
 			}
 		}
 		
-		return output;
+		return new int[]{0,0};
 	}
 }
