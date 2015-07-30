@@ -34,8 +34,7 @@ public class TwoSum {
 	
 	public static int[] twoSum(int[] nums, int target) {
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		
-		
+	
 		for(int j=0; j<nums.length; j++) {
 			int remainder = target-nums[j];
 			if(map.containsKey(remainder)) {
