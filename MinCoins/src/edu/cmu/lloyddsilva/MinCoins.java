@@ -3,8 +3,8 @@ package edu.cmu.lloyddsilva;
 
 public class MinCoins {
 	public static void main(String[] args) {
-		int[] denominations = new int[] {1,3,5,7};
-		int sum = 10;
+		int[] denominations = new int[] {2,7,10};
+		int sum = 14;
 		
 		System.out.println(numberOfCoins(sum, denominations));
 		

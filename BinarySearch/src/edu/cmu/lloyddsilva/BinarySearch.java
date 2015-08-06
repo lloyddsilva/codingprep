@@ -15,14 +15,14 @@ public class BinarySearch {
 		int left = start; 
 		int right = end;
 		
-		while(left < right) {
+		while(left <= right) {
 			int med = (left + right) / 2;
 			if(input[med] == key) { 
 				return med;
 			} else if(input[med] < key) {
 				left = med+1;
 			} else {
-				right = med;
+				right = med-1;
 			}
 		}
 		
